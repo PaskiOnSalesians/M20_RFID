@@ -1,0 +1,10 @@
+D:\ForkGit\M20-RFID\PaskiBranch\M20-RFID\M20-RFID\bin\Debug\M20-RFID.exe.config
+D:\ForkGit\M20-RFID\PaskiBranch\M20-RFID\M20-RFID\bin\Debug\M20-RFID.exe
+D:\ForkGit\M20-RFID\PaskiBranch\M20-RFID\M20-RFID\bin\Debug\M20-RFID.pdb
+D:\ForkGit\M20-RFID\PaskiBranch\M20-RFID\M20-RFID\obj\Debug\M20-RFID.csproj.AssemblyReference.cache
+D:\ForkGit\M20-RFID\PaskiBranch\M20-RFID\M20-RFID\obj\Debug\M20_RFID.MainApp.resources
+D:\ForkGit\M20-RFID\PaskiBranch\M20-RFID\M20-RFID\obj\Debug\M20_RFID.Properties.Resources.resources
+D:\ForkGit\M20-RFID\PaskiBranch\M20-RFID\M20-RFID\obj\Debug\M20-RFID.csproj.GenerateResource.cache
+D:\ForkGit\M20-RFID\PaskiBranch\M20-RFID\M20-RFID\obj\Debug\M20-RFID.csproj.CoreCompileInputs.cache
+D:\ForkGit\M20-RFID\PaskiBranch\M20-RFID\M20-RFID\obj\Debug\M20-RFID.exe
+D:\ForkGit\M20-RFID\PaskiBranch\M20-RFID\M20-RFID\obj\Debug\M20-RFID.pdb
