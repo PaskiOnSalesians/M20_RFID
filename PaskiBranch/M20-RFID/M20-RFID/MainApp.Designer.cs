@@ -45,10 +45,10 @@ namespace M20_RFID
             this.panel4 = new System.Windows.Forms.Panel();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.lsxArduino = new System.Windows.Forms.ListBox();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.btnSerialConnect = new System.Windows.Forms.Button();
+            this.lsxArduino = new System.Windows.Forms.ListBox();
             this.cbxBeacons = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -207,7 +207,6 @@ namespace M20_RFID
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.cbxBeacons);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.panel14);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
@@ -215,16 +214,6 @@ namespace M20_RFID
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(307, 520);
             this.panel5.TabIndex = 1;
-            // 
-            // panel14
-            // 
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.btnSerialConnect);
-            this.panel14.Controls.Add(this.lsxArduino);
-            this.panel14.Location = new System.Drawing.Point(21, 29);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(258, 193);
-            this.panel14.TabIndex = 0;
             // 
             // label2
             // 
@@ -236,6 +225,30 @@ namespace M20_RFID
             this.label2.Size = new System.Drawing.Size(185, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Ports de connexió";
+            // 
+            // panel14
+            // 
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Controls.Add(this.cbxBeacons);
+            this.panel14.Controls.Add(this.btnSerialConnect);
+            this.panel14.Controls.Add(this.lsxArduino);
+            this.panel14.Location = new System.Drawing.Point(21, 29);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(258, 252);
+            this.panel14.TabIndex = 0;
+            // 
+            // btnSerialConnect
+            // 
+            this.btnSerialConnect.FlatAppearance.BorderSize = 2;
+            this.btnSerialConnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSerialConnect.ForeColor = System.Drawing.Color.White;
+            this.btnSerialConnect.Location = new System.Drawing.Point(162, 198);
+            this.btnSerialConnect.Name = "btnSerialConnect";
+            this.btnSerialConnect.Size = new System.Drawing.Size(75, 35);
+            this.btnSerialConnect.TabIndex = 2;
+            this.btnSerialConnect.Text = "CONNECT";
+            this.btnSerialConnect.UseVisualStyleBackColor = true;
+            this.btnSerialConnect.Click += new System.EventHandler(this.btnSerialConnect_Click);
             // 
             // lsxArduino
             // 
@@ -249,29 +262,16 @@ namespace M20_RFID
             this.lsxArduino.Size = new System.Drawing.Size(218, 104);
             this.lsxArduino.TabIndex = 2;
             // 
-            // btnSerialConnect
-            // 
-            this.btnSerialConnect.FlatAppearance.BorderSize = 2;
-            this.btnSerialConnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSerialConnect.ForeColor = System.Drawing.Color.White;
-            this.btnSerialConnect.Location = new System.Drawing.Point(162, 140);
-            this.btnSerialConnect.Name = "btnSerialConnect";
-            this.btnSerialConnect.Size = new System.Drawing.Size(75, 35);
-            this.btnSerialConnect.TabIndex = 2;
-            this.btnSerialConnect.Text = "CONNECT";
-            this.btnSerialConnect.UseVisualStyleBackColor = true;
-            this.btnSerialConnect.Click += new System.EventHandler(this.btnSerialConnect_Click);
-            // 
             // cbxBeacons
             // 
             this.cbxBeacons.BackColor = System.Drawing.Color.Black;
             this.cbxBeacons.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxBeacons.ForeColor = System.Drawing.Color.White;
             this.cbxBeacons.FormattingEnabled = true;
-            this.cbxBeacons.Location = new System.Drawing.Point(21, 244);
+            this.cbxBeacons.Location = new System.Drawing.Point(19, 150);
             this.cbxBeacons.Name = "cbxBeacons";
-            this.cbxBeacons.Size = new System.Drawing.Size(258, 28);
-            this.cbxBeacons.TabIndex = 4;
+            this.cbxBeacons.Size = new System.Drawing.Size(218, 28);
+            this.cbxBeacons.TabIndex = 5;
             // 
             // MainApp
             // 
@@ -288,6 +288,7 @@ namespace M20_RFID
             this.Name = "MainApp";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainApp_FormClosing);
             this.Load += new System.EventHandler(this.MainApp_Load);
             this.panel1.ResumeLayout(false);
             this.panel12.ResumeLayout(false);

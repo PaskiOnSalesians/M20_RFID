@@ -33,7 +33,7 @@ namespace AccesDades
         private string CadenaConnexio()
         {
             string cadena = "";
-            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["SecureCore"];
+            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["DarkCore"];
             
             if(settings != null)
             {
